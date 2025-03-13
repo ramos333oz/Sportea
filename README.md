@@ -1,96 +1,55 @@
-# Sportea 🏆
+# Sport Matchmaking App
 
-> A university sports matchmaking mobile application
+## Project Overview
 
-## 📱 Project Overview
+This mobile application is designed for university students to host and join sports games, while integrating with the university's court booking system. The app allows users to:
+- Host games and specify details like sport, date, time, and court.
+- Find and join games hosted by other students.
+- View match details in a minimalistic interface.
 
-Sportea is a final year computer science project aimed at creating a mobile application for sports matchmaking within a university campus. The app allows students to:
+## Technologies Used
+- **Front-end:** React Native
+- **Back-end:** Supabase
+- **AI Dev Tools:** Cursor or Windsurf (for enhanced coding efficiency)
 
-- Find sports games/matches hosted by other students
-- Host games and invite participants
-- Browse available games filtered by sport type
-- Book courts directly through the app
-- Integrate with the university's existing booking system (https://bsu.uitm.edu.my/)
+## Getting Started
 
-## 🎯 Key Features
+1. **Set up Supabase:**
+   - Create a new Supabase project and set up the necessary tables and authentication.
 
-- **Matchmaking System**: Connect players and teams for various sports
-- **Game Hosting**: Allow users to create and manage sports events
-- **Court Booking Integration**: Synchronize with the university's existing booking platform
-- **University-Restricted Access**: Limited to university students using their official email addresses
-- **Game Roster Display**: Minimalistic interface showing match participants (similar to video game lobbies)
+2. **Set up React Native Project:**
+   - Initialize a new React Native project.
+   - Integrate Supabase client for data operations and authentication.
 
-## 🔄 Integration with University Booking System
+3. **Implement Features:**
+   - User authentication with email verification for university domains.
+   - Game hosting with manual input of booking details.
+   - Game browsing and joining.
+   - Display match details.
 
-A core feature of Sportea is its integration with the university's existing booking system:
+4. **Test and Deploy:**
+   - Test the app on simulators or devices.
+   - Deploy for testing within the university or prepare for app store submission.
 
-- Credentials for hosted games will sync with the university booking database
-- Students won't need to manually use both systems separately
-- Booking conflicts will be prevented through real-time synchronization
-- The entire booking process will be streamlined and aligned
+## Dependencies
+- [React Native](https://reactnative.dev/)
+- [Supabase JavaScript Client](https://supabase.com/docs/reference/javascript)
+- [Expo](https://expo.dev/) (optional for easier development)
 
-## 💻 Technical Stack Recommendations
+## Instructions for Users
+1. **Book a Court:**
+   - Visit the university's booking system at [bsu.uitm.edu.my](https://bsu.uitm.edu.my/) to book a court.
+   - Enter the booking details when hosting a game in the app.
 
-### Frontend Options
-- **React Native**: Recommended for cross-platform development with excellent performance and wide community support
-- **Flutter**: Good alternative with a single codebase for both iOS and Android
-- **Swift/Kotlin**: For native development if targeting a single platform initially
+2. **Host a Game:**
+   - Log in to the app.
+   - Navigate to the "Host Game" screen and fill in the game details, including the booking information.
 
-### Backend Options
-- **Firebase**: Recommended for rapid development, real-time database, authentication services, and easy mobile integration
-- **Supabase**: Good open-source alternative to Firebase with PostgreSQL database
-- **Hostinger + Custom Backend**: More work but provides greater flexibility if custom logic is needed
+3. **Join a Game:**
+   - Log in to the app.
+   - Browse the list of available games and join one by clicking the "Join" button.
 
-### AI Development Tools
-- **Cursor**: Excellent for code assistance and pair programming with AI
-- **GitHub Copilot**: Seamless integration with most IDEs for code suggestions
-- **Replit**: Good for quick prototyping and collaboration
-- **Windsurf**: Consider for specific AI-driven features
+4. **View Match Details:**
+   - From the game list or directly from a game's page, view detailed information about the game and its participants.
 
-## 🚀 Project Roadmap
-
-1. **Planning & Research Phase**
-   - Define detailed user requirements
-   - Study university booking system API/integration options
-   - Select final technology stack
-
-2. **Design Phase**
-   - Create wireframes and UI/UX design
-   - Design database schema
-   - Plan API endpoints
-
-3. **Development Phase**
-   - Implement user authentication (university email restriction)
-   - Build court booking and game hosting features
-   - Develop integration with university booking system
-   - Create match browsing and joining functionality
-
-4. **Testing Phase**
-   - Conduct unit and integration testing
-   - Perform user acceptance testing with student volunteers
-   - Stress test booking system integration
-
-5. **Deployment & Maintenance**
-   - Deploy to app stores (or internal university distribution)
-   - Monitor performance and gather user feedback
-   - Implement improvements and fixes
-
-## 📋 Prerequisites
-
-- University student account
-- Mobile device (iOS or Android)
-- Internet connection
-
-## 🔒 Security & Privacy
-
-- Limited access to university email holders only
-- User data protected according to university data policies
-- Integration with university systems following secure protocols
-
-## 📬 Contact
-
-For questions or suggestions about this final year project, please contact the developer.
-
----
-
-*This project is being developed as a final year computer science project.*
+This project aims to provide a seamless experience for university students to organize and participate in sports games, leveraging the university's existing infrastructure for court bookings.
