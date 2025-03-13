@@ -1,83 +1,96 @@
-# Sportea 🍵
+# Sportea 🏆
 
-> Brewing a perfect blend of sports and wellness
+> A university sports matchmaking mobile application
 
-Sportea is a comprehensive platform that combines sports and wellness to help users track their activities, discover nutritional guidance, and connect with fitness enthusiasts.
+## 📱 Project Overview
 
-## ✨ Features
+Sportea is a final year computer science project aimed at creating a mobile application for sports matchmaking within a university campus. The app allows students to:
 
-- **Activity Tracking**: Log and monitor your workouts, runs, and other physical activities
-- **Nutrition Guide**: Access personalized nutrition plans and tea-based wellness recipes
-- **Community Connection**: Connect with like-minded fitness enthusiasts
-- **Goal Setting**: Set and track your fitness and wellness goals
-- **Analytics Dashboard**: Visualize your progress through intuitive charts and graphs
-- **Wellness Resources**: Access articles, videos, and resources on sports and wellness
+- Find sports games/matches hosted by other students
+- Host games and invite participants
+- Browse available games filtered by sport type
+- Book courts directly through the app
+- Integrate with the university's existing booking system (https://bsu.uitm.edu.my/)
 
-## 🚀 Tech Stack
+## 🎯 Key Features
 
-- Frontend: React.js with Next.js
-- Backend: Node.js with Express
-- Database: MongoDB
-- Authentication: OAuth 2.0
-- Styling: Tailwind CSS
-- Deployment: Vercel/Netlify
+- **Matchmaking System**: Connect players and teams for various sports
+- **Game Hosting**: Allow users to create and manage sports events
+- **Court Booking Integration**: Synchronize with the university's existing booking platform
+- **University-Restricted Access**: Limited to university students using their official email addresses
+- **Game Roster Display**: Minimalistic interface showing match participants (similar to video game lobbies)
+
+## 🔄 Integration with University Booking System
+
+A core feature of Sportea is its integration with the university's existing booking system:
+
+- Credentials for hosted games will sync with the university booking database
+- Students won't need to manually use both systems separately
+- Booking conflicts will be prevented through real-time synchronization
+- The entire booking process will be streamlined and aligned
+
+## 💻 Technical Stack Recommendations
+
+### Frontend Options
+- **React Native**: Recommended for cross-platform development with excellent performance and wide community support
+- **Flutter**: Good alternative with a single codebase for both iOS and Android
+- **Swift/Kotlin**: For native development if targeting a single platform initially
+
+### Backend Options
+- **Firebase**: Recommended for rapid development, real-time database, authentication services, and easy mobile integration
+- **Supabase**: Good open-source alternative to Firebase with PostgreSQL database
+- **Hostinger + Custom Backend**: More work but provides greater flexibility if custom logic is needed
+
+### AI Development Tools
+- **Cursor**: Excellent for code assistance and pair programming with AI
+- **GitHub Copilot**: Seamless integration with most IDEs for code suggestions
+- **Replit**: Good for quick prototyping and collaboration
+- **Windsurf**: Consider for specific AI-driven features
+
+## 🚀 Project Roadmap
+
+1. **Planning & Research Phase**
+   - Define detailed user requirements
+   - Study university booking system API/integration options
+   - Select final technology stack
+
+2. **Design Phase**
+   - Create wireframes and UI/UX design
+   - Design database schema
+   - Plan API endpoints
+
+3. **Development Phase**
+   - Implement user authentication (university email restriction)
+   - Build court booking and game hosting features
+   - Develop integration with university booking system
+   - Create match browsing and joining functionality
+
+4. **Testing Phase**
+   - Conduct unit and integration testing
+   - Perform user acceptance testing with student volunteers
+   - Stress test booking system integration
+
+5. **Deployment & Maintenance**
+   - Deploy to app stores (or internal university distribution)
+   - Monitor performance and gather user feedback
+   - Implement improvements and fixes
 
 ## 📋 Prerequisites
 
-- Node.js (v14+)
-- npm or yarn
-- MongoDB (local or Atlas)
+- University student account
+- Mobile device (iOS or Android)
+- Internet connection
 
-## 🛠️ Installation
+## 🔒 Security & Privacy
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ramos333oz/Sportea.git
-   cd Sportea
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. Create a `.env` file in the root directory and add the required environment variables:
-   ```
-   MONGODB_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   ```
-
-4. Start the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-## 🔍 Usage
-
-After installation, open your browser and navigate to `http://localhost:3000` to access the application. Create an account to start tracking your sports activities and exploring wellness resources.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- Limited access to university email holders only
+- User data protected according to university data policies
+- Integration with university systems following secure protocols
 
 ## 📬 Contact
 
-If you have any questions or suggestions, please reach out to us!
+For questions or suggestions about this final year project, please contact the developer.
 
 ---
 
-Made with ❤️ by the Sportea Team
+*This project is being developed as a final year computer science project.*
